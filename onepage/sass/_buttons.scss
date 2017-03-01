@@ -1,0 +1,130 @@
+/****** Propriety Default *******/
+button{
+border: none;
+border-color: transparent;
+background: transparent;}
+
+/****** BOUTTON 01 *******/
+.btn_01 {
+    font-family: $titre-fonts;
+    font-size: 20px;
+    padding: 5px 15px 5px 0px;
+    background-color: #0091ca;
+    border-radius: 25px;
+    border-color: transparent;
+    color: white;
+    border: 1px solid #0091ca;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+
+    span {
+      font-family: $titre-fonts;
+      font-size: 20px;
+      padding: 8px 22px;
+      margin-right: 10px;
+      background-color: #009fe0;
+      border-radius: 25px;
+      border-color: transparent;
+      color: white;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      transition: all ease 0.3s;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+  }
+  &:hover span{
+    background-color: transparent;
+    color: #0091ca;
+    margin: 0;
+    padding-right: 10px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  }
+  &:hover, &:focus{
+    border-color: #0091ca;
+    background: white;
+    color: #0091ca;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  }
+}
+/*html code btn_01*/
+/*<button>
+  <a href="" class="btn btn_01">
+    <span>VOIR</span>+
+  </a>
+</button>*/
+
+/****** BOUTTON 02 *******/
+.btn_02{
+    color: #fff;
+    background-color: #337ab7;
+    padding: 16px 18px;
+    font-size: 16px;
+    border:none;
+    border-radius:0;
+    text-transform:uppercase;   
+  &:hover{
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+  }
+  @media (min-width: 768px) {
+    font-size:21px;
+  }
+}
+
+
+/****** BOUTTON 03 *******/
+.btn_03{
+    color: #fff;
+    background-color: #337ab7;
+    padding: 16px 18px;
+    font-size: 16px;
+    border:none;
+    border-radius:0;
+    @include animate;
+    text-transform:uppercase;  
+  &:hover{
+    @include animate;
+    padding: 16px 26px;
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+  }
+  @media (min-width: 768px) {
+    font-size:21px;
+  }
+}
+
+
+/****** BOUTTON 04 *******/
+.btn_04{
+    color: #fff;
+    background-color: #337ab7;
+    padding: 16px 18px;
+    font-size: 16px;
+    border:none;
+    border-radius:0px 25px 0px 25px;
+    @include animate;
+    text-transform:uppercase;  
+  &:hover{
+    @include animate;
+    color: #337ab7;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    font-size:21px;
+  }
+}
+
+

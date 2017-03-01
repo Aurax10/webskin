@@ -1,0 +1,89 @@
+/* Nombre de pixels d'écart en haut et en bas de chaque section */
+$ecart : 60px;
+/* Polices des titres */
+$titre-fonts : 'Montserrat', sans-serif;
+
+$background-default : url(../images/bg.png) repeat;
+
+@mixin titres {
+	font-family: $titre-fonts;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+
+
+
+/****** ANIMATION TRANSITION ******/
+$timing: all ease 0.3s;
+
+@mixin animate {
+	-webkit-transition: $timing;
+	-moz-transition: $timing;
+	-oz-transition: $timing;
+	transition: $timing;
+}
+
+
+/****** OMBRE SOUS LES BLOCS ******/
+$shadow: 2px 2px 5px 0px #656565;
+
+@mixin boxshadow {
+	-moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    box-shadow: $shadow;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+
+
+/****** PALETTE DE COULEURS ******/
+$fond: #333;
+$texte: #AAA;
+
+$base_color: #a35a5a;
+
+	/* analogues */
+	$a_support_color: adjust_hue($base_color, 30);
+	$a_accent_color: adjust_hue($base_color, -30);
+	$a_dark_base_color: darken($base_color, 25);
+	$a_light_base_color: lighten($base_color, 25);
+
+	/* basique */
+	$b_dark_base_color: darken($base_color, 25);
+	$b_darker_base_color: darken($base_color, 50);
+	$b_light_base_color: lighten($base_color, 25);
+	$b_lighter_base_color: lighten($base_color, 75);
+
+	/* complémentaire */
+	$c_complementary_color: complement($base_color);
+	$c_light_base_color: lighten($base_color, 25);
+	$c_lighter_base_color: lighten($base_color, 50);
+	$c_dark_complementary_color: darken($c_complementary_color, 25);
+
+	/* complémentaire 2 */
+	$d_complement_support_color: adjust_hue($base_color, 180 + 30);
+	$d_complement_accent_color: adjust_hue($base_color, 180 - 30);
+	$d_dark_complement_accent_color:darken($d_complement_accent_color,25);
+	$d_dark_base_color: darken($base_color, 25);
+	$d_light_base_color: lighten($base_color, 25);
+
+	/* triadique */
+	$e_support_color: adjust_hue($base_color, 120);
+	$e_accent_color: adjust_hue($base_color, -120);
+	$e_dark_support_color: darken($e_support_color, 25);
+	$e_light_accent_color: lighten($e_accent_color, 25);
+
+
+/****** REBONDIR ELEMENT ******/
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}

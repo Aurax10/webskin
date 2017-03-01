@@ -1,0 +1,584 @@
+//////////////////////// SECTION HEADER//////////////////////////////
+
+.section-header{
+	min-height: 800px;
+    background: $base_color;
+    position:relative;
+    text-align:center;
+    @media (min-width: 768px) {
+		min-height: 1000px;
+	}
+//Couche par dessus l'image
+    .overlay {
+    	opacity:0;
+    	background-color:black;
+    	position:absolute;
+    	bottom:0;
+    	top:0;
+    	left:0;
+    	right:0;
+    }
+	h1 {
+		margin-top:150px;
+		@include titres;
+		@media (min-width: 768px) {
+			margin-top:300px;
+		}
+		.title{
+			color:white;
+			font-size:24px;
+			@media (min-width: 768px) {
+				font-size:32px;
+			}
+		}
+		.subtitle{
+			color:$c_complementary_color;
+			font-size:36px;
+			@media (min-width: 768px) {
+				font-size:48px;
+			}
+		}
+	}
+	p {
+		font-size:21px;
+		color:white;
+		padding: 0 0 30px 0;;
+
+	}
+	.arrow {
+		position:absolute;
+  		bottom: 50px;
+  		left: 50%;
+  		margin-left:-20px;
+  		width: 40px;
+  		height: 40px;
+  		background-image: url(../images/icons/scrolldown.png);
+  		background-size: contain;
+  	}
+  	.bounce {
+  		@include animation(bounce 2s infinite);
+	}
+}
+
+//////////////////////// SECTION FEATURETTES //////////////////////////////
+
+.section-featurettes {
+	padding:$ecart 0;
+	background: center 0 fixed $d_complement_support_color;
+	.title {
+		@include titres;
+		text-align:center;
+	}
+	.description {
+		text-align:center;
+	}
+    .featurette {
+     	padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+      	overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      	@media (max-width: 979px) {
+      		height:auto;
+      		padding:0;
+      	}
+      	.featurette-image {
+     	margin-top: -50px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+		}
+	    .featurette-image.pull-left {
+	     	margin-right: 40px;
+	    }
+	    .featurette-image.pull-right {
+	     	margin-left: 40px;
+	    }
+		.featurette-image.pull-left, .featurette-image.pull-right {
+			@media (max-width: 979px) {
+				display: block;
+	        	float: none !important;
+	        	max-width: 70%;
+	        	margin: 0 auto 20px;
+			}
+		}
+    }
+    
+}
+
+.section-featurettes-02 {
+	padding:$ecart 0;
+	background: center 0 fixed $e_light_accent_color;
+	.title {
+		@include titres;
+		text-align:center;
+	}
+	.description {
+		text-align:center;
+	}
+	hr.featurette-divider{
+		border-top: 1px solid transparent;
+	}
+    .featurette {
+     	padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+     	padding-left: 20px;
+      	overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      	border-left: 2px solid white;
+      	@media (max-width: 979px) {
+      		height:auto;
+      	}
+      	.featurette-image {
+     		margin-top: -50px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	    }
+	    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+	    .featurette-image.pull-left {
+	     	margin-right: 40px;
+	    }
+	    .featurette-image.pull-right {
+	     	margin-left: 40px;
+	    }
+		.featurette-image.pull-left,.featurette-image.pull-right {
+			@media (max-width: 979px) {
+				display: block;
+	        	float: none !important;
+	        	max-width: 70%;
+	        	margin: 0 auto 20px;
+			}
+		}
+    }
+
+
+}
+
+//////////////////////// SECTION BLOCS //////////////////////////////
+
+.section-blocs {
+	padding:$ecart 0;
+	background: center 0 fixed $a_light_base_color;	
+	.title {
+		@include titres;
+		text-align:center;
+	}
+	.description {
+		text-align:center;
+	}
+	.bloc {
+		background-color:white;
+		margin-top:20px;
+		min-height: 400px;
+		max-width: 400px;
+   		margin:30px auto;
+		padding:35px 0 10px 0;
+		@include boxshadow;
+		@media (min-width: 1200px) {
+			min-height:450px;
+		}
+		.icon{
+			margin:auto;
+			@include use-sprite('installation_gris');
+		}		
+		.title,.description{
+			text-align:center;
+			padding:0px 15px 0px 15px;
+			color:black;
+		}
+		.title{
+			font-family: $titre-fonts;
+			padding:25px 0px 10px 0px;
+		}
+	}	
+}
+
+.section-blocs-02 {
+	padding:$ecart 0;
+	background: center 0 fixed $e_dark_support_color;	
+	.title {
+		@include titres;
+		text-align:center;
+	}
+	.description {
+		text-align:center;
+	}
+	.bloc {
+		background-color:white;
+		margin-top:20px;
+		border-bottom: 8px solid $d_complement_support_color;
+		min-height: 400px;
+		max-width: 400px;
+   		margin:30px auto;
+		padding:0px 0 10px 0;
+		@include boxshadow;
+		@media (min-width: 1200px) {
+			min-height:450px;
+		}
+	
+		.title,.description{
+			text-align:center;
+			padding:0px 15px 0px 15px;
+			color:black;
+		}
+		.title{
+			font-family: $titre-fonts;
+			padding:25px 0px 10px 0px;
+		}
+	}	
+}
+
+
+
+//////////////////////// SECTION FANCYBOX //////////////////////////////
+
+.section-fancybox{
+	padding:$ecart 0;
+	background: center 0 fixed $d_complement_accent_color;
+	text-align:center;
+	.title {
+		@include titres;
+	}
+	.blocs{
+		margin:20px 0 20px 0;
+		.bloc{
+			display: inline-block;
+			margin-top:30px;
+			.photo{
+				height:250px;
+				width:auto;
+		        position:relative;
+		        display: inline-block;
+				overflow:hidden;
+				border:2px solid white;
+				img{
+					opacity: .99;
+					@include animate;
+					width:       100%;
+		            height:      100%;
+		            line-height: 0;
+					
+					&:hover{
+						width:115%;
+						height:115%;
+						opacity: 0.4;
+					}
+				}
+				.loupe{
+					position: absolute;
+					top:30%;
+            		left:30%;
+					@include use-sprite('loupe');
+				}
+			}
+		}
+	}
+	.description{
+		margin:40px 0 40px 0;
+		font-size:21px;
+	}
+}
+
+//////////////////////// SECTION FOUR TEXT //////////////////////////////
+
+.section-four-text{
+	background: center 0 fixed $a_support_color;
+	padding:$ecart 0;
+	text-align:center;
+	.title {
+		@include titres;
+	}
+	.description {
+	}
+	.icon{
+		margin:auto;
+		@include use-sprite('installation_gris');
+	}
+	.title{
+		padding:15px 0 0 0;
+	}
+	.text-desc {
+		padding:15px 0 0 0;
+	}
+}
+
+//////////////////////// SECTION CAROUSEL //////////////////////////////
+
+.section-carousel {
+	background: center 0 fixed $a_light_base_color;	
+	padding:$ecart 0;
+	text-align:center;
+	.title {
+		@include titres;
+	}
+	.description {
+	}
+	.carousel {
+		margin-top:40px;
+		/* RETIRER LES OMBRES MOCHES EN BACKGROUND SUR LES COTES DU CAROUSEL */
+		.carousel-control.right,.carousel-control.left{
+			background-image:none;
+		}
+		/* REMPLACEMENT DES FLECHES DE NAVIGATION */
+		.arrow-right {
+			@include use-sprite('arrow_right_01');
+			right: 50%;
+			
+		}
+		.arrow-left {
+			@include use-sprite('arrow_left_01');
+			left: 50%;
+		}
+		.arrow-right,.arrow-left {
+			position: absolute;
+		    top: 50%;
+		    margin-top: -10px;
+		    z-index: 5;
+		    display: inline-block;
+		}
+		/* Image du carousel responsive */
+		.item-image {
+			@media (max-width:979px){
+				max-width:70%;
+				margin: 0 auto 20px;
+			}
+		}
+		/* Placement du texte */
+		.item-description{
+			@media (min-width:1200px){
+				position: absolute;
+    			left: 50%;
+    			top:50%;
+    			padding-right:25%;
+			}			
+			.item-titre{
+				@include titres;
+				font-weight:500;
+			}
+		}
+		.right-item{
+			text-align:center;
+			@media (min-width:1200px){
+				text-align:right;
+			}
+		}
+		.left-item{
+			text-align:center;
+			@media (min-width:1200px){
+				text-align:left;
+			}
+		}
+	}
+}
+//////////////////////// SECTION CAROUSEL 02 //////////////////////////////
+
+.section-carousel-02{
+	
+}
+ 
+//////////////////////// SECTION BREAK //////////////////////////////
+.section-break {
+    background: center 0 fixed;
+    padding:0;
+    text-align: center;
+    .title {
+        @include titres;
+    }
+    .break-left{
+        padding: 75px 40px;
+        background: center 0 fixed $d_dark_complement_accent_color;
+    }
+    .break-right{
+        padding: 75px 40px;
+        background: center 0 fixed $d_dark_base_color;
+    }
+}
+
+
+//////////////////////// SECTION FAQ ///////////////////////////////////
+
+.section-video-faq {
+    background: center 0 fixed $a_support_color;
+	padding:$ecart 0;
+	text-align:center;
+    .title {
+        @include titres;
+    }
+	.description{
+	}
+	.panel-group{
+		text-align:left;
+		.panel{
+			background-color:transparent;
+			border:none;
+		}
+	}
+	.spotlight {
+		.title {
+			margin-top:40px;
+		}
+		span{
+			font-size:28px;
+		}
+	}
+	
+}
+
+//////////////////////// SECTION CONTACT : formulaire + information de contact //////////////////////////////
+
+.contact-01 {
+	background: center 0 fixed $d_complement_support_color;
+	padding:$ecart 0;
+	
+	.title {
+		@include titres;
+		text-align:center;
+	}
+	.formulaire,.info{
+		margin-top:25px;
+		.form-group {
+			text-align:left;
+		}
+	}
+	.description{
+		margin:30px 0 30px 0;
+	}
+
+}
+
+//////////////////////// SECTION MAPS /////////////////////////////////////////
+.section-maps {
+	background-color :#e8f0dc;
+}
+
+//////////////////////// SECTION FOOTER 01 /////////////////////////////////////////
+
+.footer-01 {
+	background-color:$d_complement_support_color;
+	padding: 25px 0;
+    text-align: center;
+    .social-buttons{
+    	margin-bottom: 0;
+    	.facebook{
+			@include use-sprite('facebook');
+    	}
+    	.twitter{
+			@include use-sprite('twitter');
+    	}
+		.linkedin{
+			@include use-sprite('linkedin');
+    	}
+		.youtube{
+			@include use-sprite('youtube');
+    	}
+    }
+}
+
+//////////////////////// SECTION CONTACT 2 : formulaire classique au milieu + Google map //////////////////////////////
+
+.contact-02 {
+	padding:$ecart 0;
+	background: center 0 fixed $a_support_color;
+	text-align:center;
+	.title {
+		@include titres;
+	}
+	.formulaire{
+		margin-top:25px;
+		.form-group {
+			text-align:left;
+		}
+	}
+}
+
+
+//////////////////////// SECTION FOOTER 02 //////////////////////////////
+
+.footer-02 {
+	background-color:$base_color;
+  	padding:$ecart 0;
+	.back-top {
+		display:none;
+		opacity:0.7;
+	    position: fixed;
+	    bottom: 20px;
+	    margin-left: -75px;
+	    padding: 10px;
+		border: 1px solid #333;
+		border-radius: 10px;
+		@include animate;
+		@media (min-width: 768px) {
+			display:block;
+			bottom: 30px;
+	   		margin-left: -125px;
+		}
+		&:hover{
+			opacity:1;
+			@include animate;
+		}
+		.arrow-button{
+			@include use-sprite('up-arrow');
+			
+		}
+	}
+	strong{
+		text-transform: uppercase;
+	}
+	.liste{
+		list-style: none;
+    	margin: 0;
+    	padding: 0;
+	}
+}
+
+//////////////////////// SECTION FOOTER 03 //////////////////////////////
+
+.footer-03 {
+	    color: white;
+	    background: $background-default;
+	    padding: 2em 0 0 0;
+    h1{
+		line-height: 45px;
+		font-size: 4em;
+		color: #333;
+		margin-top: 0;
+		text-align: left;
+		font-family: Teko-Regular;
+		letter-spacing: 8px;
+		span{
+			color: #3d0e20;
+		}
+	}
+	p{
+		font-size:18px;
+	}
+	.glyphicon{
+		color: #7b1c2f;
+		font-size: 30px;
+		margin-top:5px;
+	}
+	.icons-footer{
+		text-align: right;
+	}
+	.footer_bottom{
+		padding:3em 0 0.5em 0;
+	}
+	.social-buttons{
+    	margin-bottom: 0;
+    	.facebook{
+			@include use-sprite('facebook');
+			background-color: #7b1c2f;
+    	}
+    	.twitter{
+			@include use-sprite('twitter');
+			background-color: #7b1c2f;
+    	}
+		.linkedin{
+			@include use-sprite('linkedin');
+			background-color: #7b1c2f;
+    	}
+		.youtube{
+			@include use-sprite('youtube');
+			background-color: #7b1c2f;
+    	}
+	}
+}
+
+
+
+
+
+
+ 
+ 

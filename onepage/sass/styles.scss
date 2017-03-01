@@ -1,0 +1,119 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+@import "compass";
+@import "plugins-custom";
+@import "retina-sprites";
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "variables";
+@import "navbar";
+@import "buttons";
+@import "sections";
+
+html { 
+  margin:0;
+  padding:0;
+}
+
+body {
+	font-family:"Roboto";
+	font-size:16px;
+	color:white;
+}
+a:focus {
+	outline:none;
+}
+
+.scroll-checkpoint{
+	position:absolute;
+	margin-top:-60px;
+}
+
+iframe{border:0;}
+
+
+
+
+////////// CAROUSEL INDICATOR //////////////
+.carousel-indicators-02 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    li{
+	    display: inline-block;
+	    width: 40px;
+	    height: 10px;
+	    margin: 1px;
+	    text-indent: -999px;
+	    border: 1px solid #fff;
+	    border-radius: 0px;
+	    cursor: pointer;
+	    background-color: #333;
+		@include animate;
+	  	&.active{
+	  		width: 80px;
+	    	height: 10px;
+		    background-color: $d_complement_support_color;		  
+		}
+		&:hover{
+			background-color:  $d_dark_complement_accent_color;
+			@include animate;
+	  		width: 80px;
+		}
+	}
+}
+
+.carousel-indicators-03 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    li{
+	    display: inline-block;
+	    width: 10px;
+	    height: 10px;
+	    margin: 1px;
+	    text-indent: -999px;
+	    border: 1px solid #fff;
+	    border-radius: 0px;
+	    cursor: pointer;
+	    background-color: #333;
+		@include animate;
+	  	&.active{
+	  		width: 10px;
+	    	height: 10px;
+		    background-color: $d_complement_support_color;		  
+		}
+		&:hover{
+			background-color:  gold;
+			@include animate;
+	  		width: 10px;
+		}
+	}
+}
+
+//////////////// FLECHE CAROUSEL ///////////////
+/*Retire l'effet d'ombe et dégradé de tous les carousels*/
+.carousel-control.left, .carousel-control.right{
+ background: transparent;
+}
+/*Mettre cette classe pour positionner les glyphicon ou font-awesome de type fèche au centre du carousel */
+.fleche-carousel{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+} 

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- 
+HEAD
+-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>TEMPLATE</title>
+    <link rel="canonical" href="adressedusite" />
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--CSS de la page-->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+<!--CSS OPTIONNEL-->   
+    <!--
+    <link rel="stylesheet" href="stylesheets/plugins/animate.css">
+    -->
+    <link rel="stylesheet" href="stylesheets/plugins/jquery.fancybox.css">
+    
+<!-- Polices complémentaires -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+
+<!-- 
+BODY
+-->
+
+
+  <body>
+
+<!--script facebook éventuel-->
+  <!--
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  -->
+
+<!--NAVBAR : se rétracte lors du scroll en réduisant la taille du logo-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar_01">
+      <div class="container-fluid">
+        <div class="col-lg-12">
+          <div class="navbar-header"> <button type="button" class="navbar-toggle"
+              data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand page-scroll" href="#header"><img class="logo-nav img-responsive" src="images/logos/logo_webskin.png" alt=""></a></div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="page-scroll" href="#presentation_01">Section 1</a></li>
+              <li><a class="page-scroll" href="#presentation_02">Section 2</a></li>
+              <li><a class="page-scroll" href="#presentation_03">Section 3</a></li>
+              <li><a class="page-scroll" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!--SECTION HEADER : Image de fond d'écran + Boutons vers les liens principaux -->
+
+    <section id="header" class="section-header">
+      <div class="overlay"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+            <h1> <span class="title">TITRE</span><br>
+              <span class="subtitle">SOUS-TITRE</span> </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, doloremque voluptates ratione laboriosam ab, dolor. Ipsa error ab ducimus odit. Qui consectetur alias placeat esse molestiae quae. Commodi, repudiandae, perferendis.</p>
+              <button><a href="" class="btn btn_01"><span>En savoir</span>+</a></button>
+              <button><a href="" class="btn btn_02">Bouton 2</a></button>
+              <button><a href="" class="btn btn_03">Bouton 3</a></button>
+              <button><a href="" class="btn btn_04">Bouton 4</a></button>
+              
+          </div>
+        </div>
+<!-- flèche qui permet de scroller vers la section suivante -->
+        <a class="arrow bounce page-scroll" href="#presentation_01"></a> </div>
+    </section>
+
+
+<!-- SECTION FEATURETTE -->
+
+    <span id="presentation_01" class="scroll-checkpoint"></span>
+    <section class="section-featurettes">
+      <div class="container">
+      <!--CONTENU DE LA SECTION -->  
+
+        <h2 class="title">SECTION FEATURETTE</h2>
+        <p class="description"></p>
+        <hr class="featurette-divider">        
+        <div class="featurette">
+          <img class="featurette-image pull-right" src="images/photos/500x350.jpg">
+          <h2 class="featurette-heading">Titre de la featurette.</h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+          <img class="featurette-image pull-left" src="images/photos/500x350.jpg">
+          <h2 class="featurette-heading">Titre de la featurette.</h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      
+      <!--FIN DU CONTENU DE LA SECTION -->
+      </div>     
+    </section>
+
+    <!-- SECTION FEATURETTE 02 -->
+
+    <span id="presentation_06" class="scroll-checkpoint"></span>
+    <section class="section-featurettes-02">
+      <div class="container">
+      <!--CONTENU DE LA SECTION -->  
+
+        <h2 class="title">SECTION FEATURETTE 02</h2>
+        <p class="description"></p>
+        <hr class="featurette-divider">        
+        <div class="featurette">
+          <img class="featurette-image pull-right" src="images/photos/500x350.jpg">
+          <h2 class="featurette-heading">Titre de la featurette.</h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+          <img class="featurette-image pull-right" src="images/photos/500x350.jpg">
+          <h2 class="featurette-heading">Titre de la featurette.</h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      
+      <!--FIN DU CONTENU DE LA SECTION -->
+      </div>     
+    </section>
+
+<!-- SECTION BLOCS -->
+
+    <span id="presentation_02" class="scroll-checkpoint"></span>
+    <section class="section-blocs">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION BLOCS</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet recusandae, delectus dolore voluptatem adipisci provident esse iure porro pariatur labore ipsum fugiat, odit eos possimus libero totam, at magnam.</p>
+      <hr>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="bloc">
+              <div class="icon"></div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum nostrum veritatis animi, magni enim vitae illum natus, quod maxime aspernatur nulla asperiores eos, facere iste consequatur error cum ex!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="bloc">
+              <div class="icon"></div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero quia quae mollitia odit non, ipsa quidem soluta perferendis facere sed error, nostrum iure necessitatibus quas veniam! Nostrum, excepturi rem! lorem</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="bloc">
+              <div class="icon"></div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsum officia deleniti culpa dolorem eaque architecto debitis placeat, eius. Nihil magnam consequuntur aspernatur odio impedit dignissimos voluptas, similique eaque accusantium.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="bloc">
+              <div class="icon"></div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse libero cumque ipsa voluptatem neque doloribus atque et itaque. Architecto aspernatur earum, voluptate aut, reiciendis voluptates esse ullam commodi officia nam.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- SECTION BLOCS -->
+
+    <span id="presentation_07" class="scroll-checkpoint"></span>
+    <section class="section-blocs-02">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION BLOCS 02</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet recusandae, delectus dolore voluptatem adipisci provident esse iure porro pariatur labore ipsum fugiat, odit eos possimus libero totam, at magnam.</p>
+      <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bloc">
+              <div class="icon">
+                <img class="img-responsive center-block" src="images/photos/360x190.jpg" alt="">
+              </div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum nostrum veritatis animi, magni enim vitae illum natus, quod maxime aspernatur nulla asperiores eos, facere iste consequatur error cum ex!</p>
+              <button class="center-block"><a href="" class="btn btn_04">Lorem</a></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bloc">
+              <div class="icon">
+                <img class="img-responsive center-block" src="images/photos/360x190.jpg" alt="">
+              </div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum nostrum veritatis animi, magni enim vitae illum natus, quod maxime aspernatur nulla asperiores eos, facere iste consequatur error cum ex!</p>
+              <button class="center-block"><a href="" class="btn btn_04">Lorem</a></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bloc">
+              <div class="icon">
+                <img class="img-responsive center-block" src="images/photos/360x190.jpg" alt="">
+              </div>
+              <h4 class="title">Titre du bloc</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor earum nostrum veritatis animi, magni enim vitae illum natus, quod maxime aspernatur nulla asperiores eos, facere iste consequatur error cum ex!</p>
+              <button class="center-block"><a href="" class="btn btn_04">Lorem</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- SECTION FANCYBOX -->
+
+    <span id="presentation_03" class="scroll-checkpoint"></span>
+    <section class="section-fancybox">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION FANCYBOX</h2>
+        <div class="row blocs">
+          <div class="col-md-4 bloc">
+            <div class="photo">
+              <!-- Image grand format -->
+              <div class="loupe"></div>
+              <a class="fancybox" data-fancybox-group="gallerie" href="images/photos/photo_test.jpg">
+                <!-- Image petit format  -->
+                <img src="images/photos/250x250.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 bloc">
+            <div class="photo">
+              <div class="loupe"></div>
+              <a class="fancybox" data-fancybox-group="gallerie" href="images/photos/photo_test.jpg">
+                <img src="images/photos/250x250.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 bloc">
+            <div class="photo">
+              <div class="loupe"></div>
+              <a class="fancybox" data-fancybox-group="gallerie" href="images/photos/photo_test.jpg">
+                <img src="images/photos/250x250.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellat quidem, molestiae in ducimus aut molestias, itaque sunt, tempora minima, ut accusamus facilis veniam repudiandae quia consequuntur aspernatur cum natus.</p>
+        <button><a href="" class="btn btn_04" target="_blank">Lorem Ipsum</a></button>
+
+        <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- SECTION FOUR TEXT -->
+
+    <span id="presentation_04" class="scroll-checkpoint"></span>
+    <section class="section-four-text">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION FOUR TEXT</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet recusandae, delectus dolore voluptatem adipisci provident esse iure porro pariatur labore ipsum fugiat, odit eos possimus libero totam, at magnam.</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1">
+            <p class="title"><strong>Title here</strong></p>
+            <div class="icon"></div>
+            <p class="text-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus veniam reiciendis enim, quisquam praesentium! Similique eveniet suscipit fugiat eius ipsam a cumque enim veritatis maxime, repellendus, nesciunt, quidem excepturi laudantium.
+            </p>
+          </div>
+          <div class="col-md-4 col-md-offset-1">
+            <p class="title"><strong>Title here</strong></p>
+            <div class="icon"></div>
+            <p class="text-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, iure minima excepturi maiores sint quisquam mollitia numquam dolores, dolor, repellendus fugiat laborum, dolore sed non ad unde explicabo possimus at.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1">
+            <p class="title"><strong>Title here</strong></p>
+            <div class="icon"></div>
+            <p class="text-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut consectetur eos debitis vero animi laborum. Sed qui soluta maiores a voluptatum voluptate.
+            </p>
+         </div>
+         <div class="col-md-4 col-md-offset-1">
+            <p class="title"><strong>Title here</strong></p>
+            <div class="icon"></div>
+            <p class="text-desc">
+              Fugit quae sapiente esse reprehenderit, at deleniti voluptatibus eaque error, voluptatem incidunt veritatis cum expedita.
+            </p>
+          </div>
+        </div>
+
+      <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+
+<!-- SECTION CAROUSEL 1 -->
+
+    <span id="presentation_05" class="scroll-checkpoint;"></span>
+    <section class="section-carousel">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+        <h2 class="title">SECTION CAROUSEL</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sapiente, itaque reprehenderit veniam a voluptatibus delectus quia quaerat fugit. Recusandae, laboriosam nobis. Mollitia maxime aspernatur at repellendus expedita quo corporis?</p>
+        <hr>
+     </div>
+     <!--FIN DU CONTENU DE LA SECTION -->
+    <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators 
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container">
+              <div class="col-lg-6">
+                <img class="first-slide item-image" src="images/photos/400x600.jpg" alt="First slide">
+              </div>
+              <div class="col-lg-6 item-description left-item">
+                <h2 class="item-titre">TITLE HERE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis commodi delectus eveniet nam, vitae praesentium odio, reprehenderit unde dolorem explicabo distinctio doloribus. Itaque porro officiis laboriosam ratione accusamus voluptate perspiciatis!</p>
+                <button><a class="btn btn_04" href="#">Lorem</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container">
+              <div class="col-lg-6">
+                <img class="second-slide item-image" src="images/photos/400x600.jpg" alt="Second slide">
+              </div>
+              <div class="col-lg-6 item-description left-item">
+                <h2 class="item-titre">ITEM TITLE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore libero, rem, natus obcaecati esse quae illum assumenda possimus quam nisi magni quibusdam laudantium ullam facilis perspiciatis dignissimos necessitatibus deleniti veniam?</p>
+                <button><a class="btn btn_04" href="#">Lorem</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <!-- Changement des glyphicons pour naviguer dans le carousel
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          -->
+          <span class="arrow-left" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+          <span class="arrow-right" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+      </div><!-- /.carousel -->
+    </section>
+
+<!-- SECTION CAROUSEL 2 -->
+    <span id="presentation_05" class="scroll-checkpoint;"></span>
+    <section class="section-carousel-02">
+        <div id="myCarousel02" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+            <ol class="carousel-indicators-03">
+              <li data-target="#myCarousel02" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel02" data-slide-to="1"></li>
+              <li data-target="#myCarousel02" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/photos/1920x800.jpg" alt="...">
+                <div class="carousel-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsam ex eveniet possimus error aliquam magnam placeat, doloremque odit nesciunt maxime ullam saepe reprehenderit facilis, a totam, eligendi, sunt voluptatibus!
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/photos/1920x800.jpg" alt="...">
+                <div class="carousel-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iusto voluptas soluta, rem error accusamus consequatur beatae. Facilis quam libero delectus alias labore
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/photos/1920x800.jpg" alt="...">
+                <div class="carousel-caption">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+              </div>
+            </div><!-- /.carousel -->
+
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel02" role="button" data-slide="prev">
+              <span class="fleche-carousel fa fa-angle-double-left fa-4x " aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel02" role="button" data-slide="next">
+              <span class="fleche-carousel fa fa-angle-double-right fa-4x" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- /.carousel -->
+    </section>
+
+<!-- SECTION BREAK : -->
+    <span id="presentation_06" class="scroll-checkpoint;"></span>
+    <section class="section-break">
+      <div class="container-fluid"> 
+        <!--CONTENU DE LA SECTION --> 
+        <div class="row">
+          <div class="col-md-6 break-left">
+            <div class="col-md-12">
+            <h2 class="title">SECTION BREAK</h2><hr>
+              <div class="col-lg-6">
+                <img src="images/photos/360x190.jpg" class="img-responsive center-block" alt=""><br>
+              </div>
+              <div class="col-lg-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat id suscipit, tempora sed voluptates, quo, eius maxime enim quos nemo dolorem magnam temporibus consequatur necessitatibus perspiciatis ducimus possimus cupiditate! Consequuntur.</p>
+                  <button><a href="#" class="btn btn_04" target="_blank">Lorem Ipsum</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 break-right">
+            <div class="col-md-12">
+            <h2 class="title">SECTION BREAK</h2><hr>
+              <div class="col-lg-6">
+                <img src="images/photos/360x190.jpg" class="img-responsive center-block" alt=""><br>
+              </div>
+              <div class="col-lg-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat id suscipit, tempora sed voluptates, quo, eius maxime enim quos nemo dolorem magnam temporibus consequatur necessitatibus perspiciatis duciossimus cupiditate! Consequuntur.</p>
+                  <button><a href="#" class="btn btn_04" target="_blank">Lorem Ipsum</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- SECTION FAQ AVEC PANEL GROUP COLLAPSE -->
+    <span id="presentation_07" class="scroll-checkpoint;"></span>
+    <section class="section-video-faq">
+      <div class="container">
+        <!--CONTENU DE LA SECTION --> 
+        <h2 class="title">SECTION VIDEO FAQ</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet recusandae, delectus dolore voluptatem adipisci provident esse iure porro pariatur labore ipsum fugiat, odit eos possimus libero totam, at magnam.</p>
+        <hr>
+        <!-- Vidéo youtube, container-fluid sinon ça bug  :( -->
+        <div class="container-fluid">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OGAeTEI_Bo0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+<!-- mise en avant d'élements, exemple : quelques chiffres, partenaires, etc ...-->  
+        <div class="spotlight">
+          <h3 class="title">Mise en avant (chiffres, partenaires)</h3><br>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <p><span>1520</span>
+                <br>Lorem</p>
+            </div>
+            <div class="col-md-2 ">
+                <p><span>3954</span>
+                <br>Ipsum</p>
+            </div>
+            <div class="col-md-2 ">
+                <p><span>7845</span>
+                <br>Dolor</p>
+            </div>
+            <div class="col-md-2 ">
+                <p><span>3698</span>
+                <br>Sit amet</p>
+            </div>
+            <div class="col-md-2">
+                <p><span>115</span>
+                <br>Labore</p>
+            </div>
+          </div>  
+        </div>    
+        <!-- GROUP PANEL DEBUT -->
+
+        <br><h3 class="title">FAQ</h3><br>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Collapsible Group 1</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Collapsible Group 2</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                Collapsible Group 3</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                Collapsible Group 4</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat.</div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN PANEL GROUP -->
+      </div>
+    </section>
+
+
+<!-- SECTION CONTACT 1 : Formulaire de contact à gauche et information de contact à droite -->
+    
+    <span id="contact" class="scroll-checkpoint"></span>
+    <section class="contact-01">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION CONTACT 1</h2>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6 contact-formulaire" data-form-type="formoid">
+            <div data-form-alert="true"></div>
+            <form action="contact_mail.php" method="post" data-form-title="CONTACT"><input value="" data-form-email="true" type="hidden">
+              <div class="form-group">
+                <label for="name_label">Nom*</label>
+                <input id="name_label" class="form-control" name="name" required="" placeholder="Jean Dupont" data-form-field="Name" type="text">
+              </div>
+              <div class="form-group">
+                <label for="email_label">E-mail*</label>
+                <input id="email_label" class="form-control" name="email" required="" placeholder="jeandupont@mail.fr" data-form-field="Email" type="email">
+              </div>
+              <div class="form-group">
+                <label for="tel_label">Téléphone</label>
+                <input id="tel_label" class="form-control" name="phone" placeholder="06 01 02 03 04" data-form-field="Phone" type="tel"> 
+              </div>
+              <div class="form-group">
+                <label for="message_label">Message*</label>
+                <textarea id="message_label" class="form-control" name="message" placeholder="Tapez votre message ici" rows="7" data-form-field="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn_03 pull-right">Envoyer</button></form><br>
+          </div>
+          <div class="col-sm-6 info">
+            <img class="img-responsive" src="images/photos/500x150.jpg" alt=""><br>
+            <div class="col-sm-6">
+                <strong>Adresse</strong>
+                <br>Nom de la société
+                <br>Adresse de la société
+                <br>Adresse de la société
+            </div>
+            <div class="col-sm-6">
+                <strong>Contact</strong>
+                <br>+33 00 00 00 00 00
+                <br>+33 00 00 00 00 00
+                <br>Adresses e-mails
+            </div>
+            <div class="fb-like" data-href="" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            <br>          
+            <div class="col-sm-12">
+              <br><strong>Liste de liens :</strong>
+              <br><a href="">Lien 1</a>
+              <br><a href="">Lien 2</a>
+              <br><a href="">Lien 3</a>
+            </div>
+          </div>
+        </div>
+
+      <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- SECTION GOOGLE MAP -->
+
+    <section class="section-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.2101318082205!2d4.079041115685012!3d49.15861957931805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e9719629fccb11%3A0x3073cdf93ac4ccb8!2s13+Rue+des+Vignes%2C+51500+Ludes!5e0!3m2!1sfr!2sfr!4v1486046296504" style="border:0;width:100%;" height="400" frameborder="0"></iframe>
+    </section>
+    
+<!-- SECTION FOOTER 1 -->
+
+    <footer class="footer-01">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Nom de la société 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+<!-- SECTION CONTACT 2 : Formulaire de contact classique au milieu de la page -->
+
+    <span id="contact" class="scroll-checkpoint"></span>
+    <section class="contact-02">
+      <div class="container">
+      <!--CONTENU DE LA SECTION --> 
+
+        <h2 class="title">SECTION CONTACT 2</h2>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 formulaire" data-form-type="formoid">
+            <div data-form-alert="true"></div>
+            <form action="contact_mail.php" method="post" data-form-title="CONTACT"><input value="" data-form-email="true" type="hidden">
+              <div class="form-group">
+                <label for="name_label">Nom*</label>
+                <input id="name_label" class="form-control" name="name" required="" placeholder="Jean Dupont" data-form-field="Name" type="text">
+              </div>
+              <div class="form-group">
+                <label for="email_label">E-mail*</label>
+                <input id="email_label" class="form-control" name="email" required="" placeholder="jeandupont@mail.fr" data-form-field="Email" type="email">
+              </div>
+              <div class="form-group">
+                <label for="tel_label">Téléphone</label>
+                <input id="tel_label" class="form-control" name="phone" placeholder="06 01 02 03 04" data-form-field="Phone" type="tel"> 
+              </div>
+              <div class="form-group">
+                <label for="message_label">Message*</label>
+                <textarea id="message_label" class="form-control" name="message" placeholder="Tapez votre message ici" rows="7" data-form-field="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn_03">Envoyer</button> </form>
+          </div>
+        </div>
+
+      <!--FIN DU CONTENU DE LA SECTION -->
+      </div>
+    </section>
+
+<!-- FOOTER 02 : Avec google map + liens mentions légales  -->
+
+    <footer class="footer-02">
+      <div class="pull-right"> <a href="#header" class="back-top page-scroll" title="Retour vers le haut">
+          <span class="arrow-button"></span> </a> </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6"><iframe src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d10412.779606919144%212d4.059596%213d49.272704%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x0%3A0xd853278a0eae7e3a%212sCD+Informatique%215e0%213m2%211sfr%212sfr%214v1465296675009" style="border:0;width:100%;" height="250"></iframe>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-5 col-sm-offset-1">
+                <p><strong>Adresse</strong><br>
+                  Nom de la société<br>
+                  Adresse de la société<br>
+                  Adresse de la société<br>
+                  <br>
+                  <strong>Contact</strong><br>
+                  00 00 00 00 00<br>
+                  Adresse électronique</p>
+                <div class="fb-like" data-href="https://www.facebook.com/informatiquedentaire/?fref=ts"
+
+                  data-layout="button" data-action="like" data-show-faces="false"
+
+                  data-share="true"></div>
+              </div>
+              <div class="col-sm-6">
+                <p><strong>Liste</strong></p>
+                <ul class="liste">
+                  <li><a href="http://www.carestream.fr/default.aspx">Partenaire</a></li>
+                  <li><a href="http://www.vatech-france.fr/">Partenaire</a></li>
+                  <li><a href="http://www.owandy.fr/">Partenaire</a></li>
+                  <li><a href="http://www.julie.fr/">Partenaire</a></li>
+                  <li><a href="http://www.soredex.com/en/">Partenaire</a></li>
+                  <li><a href="https://www.duerrdental.com/home/">Partenaire</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6">
+            Copyright &copy; 2017 Nom de la société.
+          </div>
+          <div class="col-sm-6">
+            <a class="mentions-legales pull-right" href="">Mentions Légales</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- FOOTER 03 : -->
+
+  <footer class="footer-03" class="container-fluid nopadd">
+  <div class="container">
+    <div class="row center-block">
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-xs-2 icons-footer">
+            <span class="glyphicon glyphicon-home"></span>
+          </div>
+          <div class="col-xs-10">
+            <h4>Adresse:</h4>
+            <p>00 Lorem Ipsum dolor sit <br>
+            Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-xs-2 icons-footer">
+            <span class="glyphicon glyphicon-earphone"></span>
+          </div>
+          <div class="col-xs-10">
+            <h4>Tél:</h4>
+            <p>+33 (0) 0.00.00.00.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-xs-2 icons-footer">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </div>
+          <div class="col-xs-10">
+            <h4>Email:</h4>
+            <p><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="f4989b869199b49d87848199da979b99">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row text-center">
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="linkedin"></i></a>
+            </li>
+            <li><a href="#" style="color:white"><i class="youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom text-center">
+      <p>Copyright © 2017 - Lorem ipsum dolor sit amet - <a href="mentions_légales.html">Tous droits réservés.</a></p>
+    </div>
+  </div>
+</footer>
+
+<!--
+SCRIPT 
+-->
+<!--Jquery/bootstrap-->
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.easing.min.js"></script>
+<!--Plugins-->
+    <script type="text/javascript" src="javascripts/plugins/wow.js"></script>
+    <script>new WOW().init();</script>
+    <script type="text/javascript" src="javascripts/plugins/jquery.fancybox.pack.js"></script>
+<!--Javascript perso : paramètrage des plugins, scroll-to etc...-->
+    <script type="text/javascript" src="javascripts/onepage.js"></script>
+<!--Google analytics-->
+
+  </body>
+</html>
